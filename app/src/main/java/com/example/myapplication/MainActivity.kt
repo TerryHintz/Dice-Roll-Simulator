@@ -18,7 +18,7 @@ class MainActivity : AppCompatActivity() {
         val seekBar = findViewById<SeekBar>(R.id.seekBar)
 
         rollButton.setOnClickListener{
-            resultsTextView.text = 5.toString()
+            resultsTextView.text = "secret neigbour"
         }
     }
 }
