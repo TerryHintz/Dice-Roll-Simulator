@@ -18,7 +18,11 @@ class MainActivity : AppCompatActivity() {
         val seekBar = findViewById<SeekBar>(R.id.seekBar)
 
         rollButton.setOnClickListener{
-            resultsTextView.text = "secret neigbour"
+            if(seekBar.progress != 0) {
+                val num = Random.nextInt(0, seekBar.progress) + 1
+                resultsTextView.text = num.toString()
+            }
+
         }
     }
 }
