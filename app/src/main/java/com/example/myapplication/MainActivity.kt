@@ -18,11 +18,8 @@ class MainActivity : AppCompatActivity() {
         val seekBar = findViewById<SeekBar>(R.id.seekBar)
 
         rollButton.setOnClickListener{
-            if(seekBar.progress != 0) {
-                val num = Random.nextInt(0, seekBar.progress) + 1
-                resultsTextView.text = num.toString()
-            }
-
+            val num = Random.nextInt(1, seekBar.progress+3)
+            resultsTextView.text = num.toString()
         }
     }
 }
